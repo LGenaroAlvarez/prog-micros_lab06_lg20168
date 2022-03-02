@@ -2550,16 +2550,19 @@ INC_SEG:
     RETURN
 
 TMR2_INT:
+    BCF ((PIR1) and 07Fh), 1
     INCF Cont_T2
     MOVF Cont_T2, W
-    INCF PORTB
+    SUBLW 10
+    BTFSC ((STATUS) and 07Fh), 2
+    GOTO INC_LED
     RETURN
 
-
-
-
-
-
+INC_LED:
+    INCF Cont_Led
+    INCF PORTB
+    CLRF Cont_T2
+    RETURN
 
 PSECT code, delta=2, abs
 ORG 100h ; posición 100h para el codigo
@@ -2619,7 +2622,7 @@ TMR2_CONFIG:
 
     BANKSEL T2CON ;
     BSF ((T2CON) and 07Fh), 1 ;
-    BSF ((T2CON) and 07Fh), 0
+    BSF ((T2CON) and 07Fh), 0 ;
 
     BSF ((T2CON) and 07Fh), 6 ;
     BSF ((T2CON) and 07Fh), 5
@@ -2627,14 +2630,17 @@ TMR2_CONFIG:
     BSF ((T2CON) and 07Fh), 3
     BSF ((T2CON) and 07Fh), 2
     RETURN
+
 INT_CONFIG:
     BANKSEL PIE1 ;
     BSF ((PIE1) and 07Fh), 0 ;
+    BSF ((PIE1) and 07Fh), 1 ;
 
     BANKSEL INTCON ;
     BSF ((INTCON) and 07Fh), 6 ;
     BSF ((INTCON) and 07Fh), 7 ;
     BCF ((PIR1) and 07Fh), 0 ;
+    BCF ((PIR1) and 07Fh), 1
     RETURN
 
 END

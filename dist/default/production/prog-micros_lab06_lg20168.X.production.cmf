@@ -13,8 +13,8 @@
 %PSECTS
 $build/default/production/main_lab06.o
 resVect CODE 0 0 0 3 2 1
-code CODE 0 0 0 141 2 1
-intVect CODE 0 0 0 23 2 1
+code CODE 0 0 0 143 2 1
+intVect CODE 0 0 0 2A 2 1
 udata_bank0 BANK0 1 20 20 6 1 1
 udata_shr COMMON 1 70 70 2 1 1
 config CONFIG 4 2007 2007 2 2 1
@@ -32,14 +32,14 @@ BANK0 26-6F 1
 BANK1 A0-EF 1
 BANK2 110-16F 1
 BANK3 190-1EF 1
-CONST 141-1FFF 2
-ENTRY 141-1FFF 2
+CONST 143-1FFF 2
+ENTRY 143-1FFF 2
 IDLOC 2000-2003 2
-CODE 141-1FFF 2
+CODE 143-1FFF 2
 COMMON 72-7F 1
 EEDATA 2100-21FF 2
-STRCODE 141-1FFF 2
-STRING 141-1FFF 2
+STRCODE 143-1FFF 2
+STRING 143-1FFF 2
 # %LINETAB Section
 # This section enumerates the file/line to address mappings.
 # The beginning of the section is indicated by %LINETAB.
@@ -86,65 +86,74 @@ F intVect CODE >85:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\mai
 20 intVect CODE >105:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
 21 intVect CODE >106:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
 22 intVect CODE >107:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+23 intVect CODE >108:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+24 intVect CODE >109:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+25 intVect CODE >110:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+26 intVect CODE >113:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+27 intVect CODE >114:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+28 intVect CODE >115:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+29 intVect CODE >116:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
 0 resVect CODE >59:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
 0 resVect CODE >61:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
 2 resVect CODE >62:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
-0 code CODE >116:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
-100 code CODE >120:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
-101 code CODE >121:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
-102 code CODE >122:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
-103 code CODE >123:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
-104 code CODE >124:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
-105 code CODE >125:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
-107 code CODE >128:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
-108 code CODE >132:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
-10A code CODE >133:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
-10B code CODE >134:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
-10C code CODE >135:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
-10D code CODE >136:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
-10E code CODE >138:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
-10F code CODE >141:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
-111 code CODE >142:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
-112 code CODE >143:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
-113 code CODE >145:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
-115 code CODE >146:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
-116 code CODE >147:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
-117 code CODE >149:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
-119 code CODE >150:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
-11A code CODE >151:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
-11B code CODE >152:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
-11C code CODE >155:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
-11E code CODE >156:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
-11F code CODE >157:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
-120 code CODE >158:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
-121 code CODE >159:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
-122 code CODE >160:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
-123 code CODE >161:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
-124 code CODE >163:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
-125 code CODE >163:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
-126 code CODE >163:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
-127 code CODE >163:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
-128 code CODE >163:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
-129 code CODE >164:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
-12A code CODE >167:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
-12C code CODE >168:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
-12D code CODE >169:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
-12E code CODE >171:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
-130 code CODE >172:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
-131 code CODE >173:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
-132 code CODE >175:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
-133 code CODE >176:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
-134 code CODE >177:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
-135 code CODE >178:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
-136 code CODE >179:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
-137 code CODE >180:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
-138 code CODE >182:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
-13A code CODE >183:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
-13B code CODE >185:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
-13D code CODE >186:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
-13E code CODE >187:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
-13F code CODE >188:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
-140 code CODE >189:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+0 code CODE >119:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+100 code CODE >123:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+101 code CODE >124:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+102 code CODE >125:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+103 code CODE >126:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+104 code CODE >127:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+105 code CODE >128:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+107 code CODE >131:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+108 code CODE >135:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+10A code CODE >136:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+10B code CODE >137:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+10C code CODE >138:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+10D code CODE >139:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+10E code CODE >141:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+10F code CODE >144:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+111 code CODE >145:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+112 code CODE >146:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+113 code CODE >148:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+115 code CODE >149:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+116 code CODE >150:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+117 code CODE >152:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+119 code CODE >153:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+11A code CODE >154:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+11B code CODE >155:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+11C code CODE >158:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+11E code CODE >159:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+11F code CODE >160:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+120 code CODE >161:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+121 code CODE >162:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+122 code CODE >163:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+123 code CODE >164:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+124 code CODE >166:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+125 code CODE >166:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+126 code CODE >166:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+127 code CODE >166:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+128 code CODE >166:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+129 code CODE >167:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+12A code CODE >170:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+12C code CODE >171:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+12D code CODE >172:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+12E code CODE >174:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+130 code CODE >175:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+131 code CODE >176:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+132 code CODE >178:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+133 code CODE >179:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+134 code CODE >180:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+135 code CODE >181:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+136 code CODE >182:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+137 code CODE >183:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+138 code CODE >186:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+13A code CODE >187:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+13B code CODE >188:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+13C code CODE >190:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+13E code CODE >191:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+13F code CODE >192:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+140 code CODE >193:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+141 code CODE >194:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
+142 code CODE >195:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\main_lab06.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -157,7 +166,7 @@ F intVect CODE >85:C:\Users\luisg\MPLABXProjects\prog-micros_lab06_lg20168.X\mai
 # was defined in a psect then <psect> will be "-". File-name
 # is the name of the object file in which the symbol was defined.
 %SYMTAB
-__Hspace_0 141 0 ABS 0 - -
+__Hspace_0 143 0 ABS 0 - -
 __Hspace_1 72 0 ABS 0 - -
 __Hspace_3 0 0 ABS 0 - -
 __Hspace_4 4010 0 ABS 0 - -
